@@ -13,11 +13,13 @@ We are building 8 different Chrome extensions which can be useful in different s
 8. Web Scraper - web scraper will traverse the website and extract the relevant data from that website.
 
 ## About browser Extensions
-Extensions are made of different, but cohesive, components. Components can include background scripts, content scripts, an options page, UI elements and various logic files.Extensions start with their manifest. Every extension has a JSON-formatted manifest file, named manifest.json, which specifies the assets within your extension that are to be made accessible by web pages.
-
 ![this is an image showing architecture of Browser extension](https://cdn.tutsplus.com/net/uploads/2013/07/architecture.png)
 
+Extensions are made of different, but cohesive, components. Components can include background scripts, content scripts, an options page, UI elements and various logic files.Extensions start with their manifest. Every extension has a JSON-formatted manifest file, named manifest.json, which specifies the assets within your extension that are to be made accessible by web pages.
+
 Chrome extensions work with 3 distinct areas that communicate: Background, content and inner scripts. Each of them has their area of expertise within the page and serves several functions.
+
+![this is an image showing architecture of Browser extension](https://res.cloudinary.com/practicaldev/image/fetch/s--QhXYM9Xz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.chrome.com/static/images/overview/messagingarc.png)
 
 The ***content script*** acts in the area which the user visits and can serve to communicate information about the current state of the page. Any information can be obtained from it and sent to the extension in order to change its behavior.<br>
 The ***background script*** acts in the browser area, it is the extension's event handler. This is where all event listeners that are important to the extension are stored. It remains inactive until an event is triggered and executes the logic that has been assigned to it.<br>
