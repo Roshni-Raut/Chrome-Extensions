@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="clearCache.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <center><span id="header">Clear Cache</span></center>
+    <div class="style">
+        <div class="d1">
+            <span style="color: black;margin: 5px;">Data to remove</span><hr>
+            <label name="label">
+                <input type="checkbox" id="appcache" name="data_to_remove" > Appcache</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="cache" name="data_to_remove"> Cache</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="cacheStorage" name="data_to_remove"> CacheStorage</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="cookies" name="data_to_remove"> Cookies</input><br>
+            </label>
+            <label name="label">
+            <input type="checkbox" id="downloads" name="data_to_remove"> Downloads</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="fileSystems" name="data_to_remove"> FileSystems</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="formData" name="data_to_remove"> FormData</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="history" name="data_to_remove"> History</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="indexedDB" name="data_to_remove"> IndexedDB</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="localStorage" name="data_to_remove"> LocalStorage</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="passwords" name="data_to_remove"> Passwords</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="serviceWorkers" name="data_to_remove"> ServiceWorkers</input><br>
+            </label>
+            <label name="label">
+                <input type="checkbox" id="webSQL" name="data_to_remove"> WebSQL</input><br>
+            </label>
+        </div>
+        <div class="d1">
+            <span style="color: black;margin:5px;">Time Period</span><hr>
+            <label name="label1"class="check">
+                <input type="radio" id="last_hour" name="time"  checked>Last Hour</input><br>
+            </label>
+            <label name="label1">
+                <input type="radio" id="last_day"name="time">Last Day</input><br>
+            </label>
+            <label name="label1">
+                <input type="radio" id="last_week"name="time">Last Week</input><br>
+            </label>
+            <label name="label1">
+                <input type="radio" id="last_month"name="time">Last Month</input><br>
+            </label>   
+            <label name="label1">
+                <input type="radio" id="everything"name="time">Everything</input><br>
+            </label> 
+        </div>
+    </div>
+    <div id="btns">
+        <button id="checkAllBtn" value="false" class="btn btn-success">Check All</input>
+        <button id="clearBtn" class="btn btn-primary" >Clear</button>
+    </div>
+    <span id="msg" class="message"></span>
+</body>
+<script src="clearCache.js"></script>
+
+</html>

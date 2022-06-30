@@ -1,0 +1,18 @@
+{
+    "name": "Clear Cache",
+    "version": "1.0.1",
+    "description": "Clear your cache and browsing data with a single click of a button.",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_title": "Clear cache",
+      "default_popup":"ClearCache.html"
+    },
+    "permissions": [
+    "browsingData"
+    ],
+  "icons": { 
+      "16": "./icons/16clear.png",
+      "48": "./icons/48clear.png",
+     "128": "./icons/128clear.png" 
+  }
+  }

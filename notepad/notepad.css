@@ -1,0 +1,52 @@
+body{
+    height:100px;
+    width:270px;
+    padding:5px;
+}
+#container{
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    border:1px solid black;
+    height: 30px;
+    width: 30px;
+    border-color: #218B82;
+    background-color: #218B82;
+}
+button > * {        /* event wouldn't target element inside button*/
+    pointer-events: none;
+}
+#add{
+    margin-left: 0px;
+    background-color: #218B82;
+}
+#add:hover{
+    border-color: #218B82;
+    background-color: #32aaa0;
+}
+button:hover{
+    border-color: white;
+    background-color: #32aaa0;
+}
+#list{
+    padding-bottom: 1px;
+}
+textarea{
+    border-color: #218B82;
+    background-color: #c2e5e3;
+    border-radius: 5px;
+}
+textarea:focus{
+    height:200px;
+}
+.text-box{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.actBtn{
+    display: flex;
+    justify-content: flex-end;
+
+}

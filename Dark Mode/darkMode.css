@@ -1,0 +1,25 @@
+body{
+    min-width: 200px;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    height:30px;
+    width:30px;
+    padding:0px;
+    border-radius: 10px;
+    border:1px solid grey;
+}
+.focus{
+    border: 3px solid rgb(129, 129, 243);
+}
+
+input{
+    background-color: transparent;
+    height:30px;
+    width:50px;
+    padding:0px;
+    border-radius: 2px;
+    border:1px solid grey;
+}
